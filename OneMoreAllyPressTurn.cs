@@ -17,7 +17,7 @@ public class OneMoreAllyPressTurn : MelonMod
         {
             short activeunit = nbMainProcess.nbGetMainProcessData().activeunit; // Get the formindex of the first active demon
 
-            // If that demon is an enemy and the enemies don't already have 8 press turns
+            // If that demon is an ally and the allies don't already have 8 press turns
             if (activeunit < 4 && nbMainProcess.nbGetMainProcessData().press4_p < 8)
             {
                 nbMainProcess.nbGetMainProcessData().press4_p++; // Add 1 full press turn
